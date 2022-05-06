@@ -1,0 +1,128 @@
+.signup{
+    display: flex;
+}
+.signupLeft{
+    background-color: var(--dark-black-color);
+    width: 45%;
+}
+.signupRight{
+    background-color: var(--white-color);
+    padding:  4rem 1rem;
+    width: 55%;
+}
+.signupLeft , .signupRight{
+    padding: 2rem 4rem ;
+    height: 100vh;                   
+}
+
+.signupLeft  .logo{
+    height: 5rem;
+}
+.signupLeft  .key{
+    padding-top: 3rem;
+    width: 33rem;
+    margin: 0 auto;
+}
+.signupLeft span {
+    display: flex;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+.signupLeft span p {
+    margin-right: 1rem;
+}
+
+.signupRight h3 {
+    color: var(--dark-black-color);
+    font-size: 2.4rem;
+    margin: 1rem 4.5rem 2rem;
+}
+.signupRight form {
+    margin: 0 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.signupRight form div{
+    position: relative;
+    margin-bottom: .7rem;
+} 
+.signupRight form .reroute {
+    display:  flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.signupRight form .reroute  a {
+    color: var(--primary-color);
+    transition: all .4s ease-in-out;
+}
+
+.signupRight form button {
+    padding:  1.5rem;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    transition: all .4s;
+    border: none;
+    border-radius: .4rem;
+}
+.signupRight form button:hover{
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;    
+}
+@media screen   and (max-width: 850px){
+    .signupLeft  .key{
+        padding-top: 3rem;
+        width: 25rem;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .signup{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .signupLeft {               
+        height: 40vh;
+        max-height: 40vh;
+        width: 100%;
+    }
+    .signupLeft  .logo{
+        height: 3rem;
+    }
+    .signupLeft  .key{
+        width: 20rem;
+        margin: auto;
+    }
+    .signupLeft span {
+        display: none;
+    }
+    .signupRight {               
+        height: 60vh;
+        max-height: 60vh;
+        width: 100%;
+        padding-top: 2.5rem;
+    }
+    .signupRight h3 {
+        display: none;
+    }
+    .signupRight form {
+        margin: 0 ;
+    }
+    .signupRight form .reroute {
+        margin: -1rem 0  1.5rem;
+    }
+    .signupRight form button {
+        padding:  1.5rem;
+        margin: 1.5rem 0;
+    }
+}

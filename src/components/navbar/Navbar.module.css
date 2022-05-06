@@ -1,0 +1,30 @@
+.navbar {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    padding:0  4%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-black-color);
+}
+.navbar img{
+    height: 5rem;
+}
+.navbar ul li a{
+    font-size:2rem;
+    color: var(--white-color);
+    transition: .25s ease-in;
+    padding-bottom: .5rem;
+}
+.navbar ul li  a:hover,
+.navbar ul li  a:active,
+.navbar ul li  a.active {
+  color: var(--primary-color);
+  border-bottom: 2.5px solid var(--primary-color);
+}
+
+@media screen   and (max-width: 600px){
+    .navbar img{
+        height: 3rem;
+    }
+}
